@@ -23,7 +23,7 @@ The script reads election data from the election_data.csv file in the Resources 
 
 How to Run
 
-Ensure python 3 is installed before running the script. The election_data.csv file needs to be in a folder called 'Resources' which will be in the same directory as 'main.py'. Execute the Python script using the following command:
+Ensure python 3 is installed before running the script. The election_data.csv file needs to be in a folder called 'Resources' which will be in the same directory as 'main.py'. Navigate to the folder where main.py is saved. Execute the Python script using the following command:
 
 python main.py  
 
@@ -50,7 +50,7 @@ Finally, the results are printed to the console and saved to Budget_Analysis.txt
 
 How to Run
 
-Ensure python 3 is installed before running the script. The budget_data.csv file needs to be in a folder called Resources which will be in the same directory as main.py. Execute the Python script using the following command:  
+Ensure python 3 is installed before running the script. The budget_data.csv file needs to be in a folder called Resources which will be in the same directory as main.py. Navigate to the folder where main.py is saved. Execute the Python script using the following command:  
 
 python main.py  
 
