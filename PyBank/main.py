@@ -52,14 +52,10 @@ with open(file_path) as csvfile:
     # Zip 'change_list' and 'dates' lists
     summary_change = list(zip(change_list, dates)) 
 
-    #Loop through each row in 'summary_change' to find out date greatest increase in profit/loss
-    for row in summary_change:
-        if row[0] == max_increase:
-            date_max = row[1] 
-    #Loop through each row in 'summary_change' to find out date greatest decrease in profit/loss        
-    for row in summary_change:
-        if row[0] == max_decrease:
-            date_min = row[1]
+    # Loop through Summary_change to find the greatest increase and decrease in profit/Loss
+    date_max = [row[1] for row in summary_change if row[0]==max_increase]
+    date_min = [row[1] for row in summary_change if row[0] == max_decrease]
+
             
 
     #Print the results to the terminal
