@@ -55,9 +55,7 @@ with open(input_file, 'r') as election_file:
     ziplist = zip(candidate_list, candidate_vote_count)
 
     #Loop through each row in the ziplist to find the winner of maximum votes
-    for row in ziplist:
-        if row[1] == max_vote:
-            winner = row[0]
+    winner = [row[0] for row in ziplist if row[1] == max_vote]
         
 
 #Printing election results to terminal;
